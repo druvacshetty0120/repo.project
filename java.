@@ -1,0 +1,15 @@
+import java.util.scanner
+  enum Departement{
+
+CSE,ISE,ECE,MECH
+  }
+public class DepartementDemo{
+  public static void main(string[]args){
+    scaaner sc=new Scanner(System.in);
+    System.out.print("Enter Departement (CSE/ISE/ECE/MECH):");
+    String dept=sc.next();
+    Departement d=Departement.valueOf(dept);
+    System.out.println("Selected Departement:"+d);
+    sc.close();
+  }
+}
